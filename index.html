@@ -1,0 +1,223 @@
+<!doctype html>
+<!--
+ .----------------.  .----------------.  .----------------.  .----------------.  .----------------.                                                             
+| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |                                                            
+| |  ____  ____  | || |      __      | || |   ______     | || |   ______     | || |  ____  ____  | |                                                            
+| | |_   ||   _| | || |     /  \     | || |  |_   __ \   | || |  |_   __ \   | || | |_  _||_  _| | |                                                            
+| |   | |__| |   | || |    / /\ \    | || |    | |__) |  | || |    | |__) |  | || |   \ \  / /   | |                                                            
+| |   |  __  |   | || |   / ____ \   | || |    |  ___/   | || |    |  ___/   | || |    \ \/ /    | |                                                            
+| |  _| |  | |_  | || | _/ /    \ \_ | || |   _| |_      | || |   _| |_      | || |    _|  |_    | |                                                            
+| | |____||____| | || ||____|  |____|| || |  |_____|     | || |  |_____|     | || |   |______|   | |                                                            
+| |              | || |              | || |              | || |              | || |              | |                                                            
+| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |                                                            
+ '----------------'  '----------------'  '----------------'  '----------------'  '----------------'                                                             
+ .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------. 
+| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
+| |   ______     | || |     _____    | || |  _______     | || |  _________   | || |  ____  ____  | || |  ________    | || |      __      | || |  ____  ____  | |
+| |  |_   _ \    | || |    |_   _|   | || | |_   __ \    | || | |  _   _  |  | || | |_   ||   _| | || | |_   ___ `.  | || |     /  \     | || | |_  _||_  _| | |
+| |    | |_) |   | || |      | |     | || |   | |__) |   | || | |_/ | | \_|  | || |   | |__| |   | || |   | |   `. \ | || |    / /\ \    | || |   \ \  / /   | |
+| |    |  __'.   | || |      | |     | || |   |  __ /    | || |     | |      | || |   |  __  |   | || |   | |    | | | || |   / ____ \   | || |    \ \/ /    | |
+| |   _| |__) |  | || |     _| |_    | || |  _| |  \ \_  | || |    _| |_     | || |  _| |  | |_  | || |  _| |___.' / | || | _/ /    \ \_ | || |    _|  |_    | |
+| |  |_______/   | || |    |_____|   | || | |____| |___| | || |   |_____|    | || | |____||____| | || | |________.'  | || ||____|  |____|| || |   |______|   | |
+| |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
+ .----------------.  .----------------.  .----------------.  .----------------.                                                                                 
+| .--------------. || .--------------. || .--------------. || .--------------. |                                                                                
+| |  ________    | || |     _____    | || | ____    ____ | || |      __      | |                                                                                
+| | |_   ___ `.  | || |    |_   _|   | || ||_   \  /   _|| || |     /  \     | |                                                                                
+| |   | |   `. \ | || |      | |     | || |  |   \/   |  | || |    / /\ \    | |                                                                                
+| |   | |    | | | || |      | |     | || |  | |\  /| |  | || |   / ____ \   | |                                                                                
+| |  _| |___.' / | || |     _| |_    | || | _| |_\/_| |_ | || | _/ /    \ \_ | |                                                                                
+| | |________.'  | || |    |_____|   | || ||_____||_____|| || ||____|  |____|| |                                                                                
+| |              | || |              | || |              | || |              | |                                                                                
+| '--------------' || '--------------' || '--------------' || '--------------' |                                                                                
+ '----------------'  '----------------'  '----------------'  '----------------'                                                                                 
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>YOWO</title>
+  <meta name="description" content="You Only Write Once">
+
+  <!--
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  -->
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,700italic,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="magic.min.css">
+  <style>
+	body, html {
+		padding: 0;
+		margin: 0;
+	}
+    div#wow {
+		font-family: 'Lora', serif;
+		font-size: 150px;
+		padding: 30px;
+		margin: 0;
+		text-align: center;
+    }
+	div#wow div#once {
+		font-family: 'Lora', serif;
+		font-size: 150px;
+		font-style: italic;
+	}
+	img.emoji {
+	   height: 1em;
+	   width: 1em;
+	   margin: 0 .05em 0 .1em;
+	   vertical-align: -0.1em;
+	}
+	footer {
+		margin: 0;
+		padding: 0;
+		position: fixed;
+		bottom: 40px;
+		width: 100%;
+	}
+	footer p {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		font-size: 40px;
+	}
+	#cover {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		background-color: #533089;
+		z-index: 100;
+		align-items: center;
+		justify-content: center;
+		display: none;
+	}
+	#hi {
+		color: white;
+		font-family: 'Times New Roman', times, serif;
+		font-size: 250px;
+	}
+  </style>
+</head>
+
+<body>
+  <div id="cover"><div id="hi">ЧРД</div></div>
+  <div id="wow">You Only Write<br><div id="once">Once</div></div>
+  <footer><p>🐘</p></footer>
+  <script src="//twemoji.maxcdn.com/2/twemoji.min.js"></script>
+  <script>
+	var pick = function(a) {
+		return a[Math.floor(Math.random()*a.length)];
+	}
+	function shuffle(a) {
+		var j, x, i;
+		for (i = a.length; i; i -= 1) {
+			j = Math.floor(Math.random() * i);
+			x = a[i - 1];
+			a[i - 1] = a[j];
+			a[j] = x;
+		}
+	}
+	var emoji = {
+		donut: '🍩',
+		shit: '💩',
+		joy: '😂',
+	};
+	var texts = [
+		'in Oregon 🚲',
+		'Over the 🌈',
+		'about Onions ' + emoji.joy,
+		'Outstanding copy',
+		'On the spot 🔴',
+		'Random ' + emoji.shit,
+		'Ostracizingly',
+		//'Odes to Dima',
+		'Objectively',
+		'in Obscurity',
+		emoji.donut,
+		'Origami manuals',
+	];
+	shuffle(texts);
+	texts.push('Once');
+	var effects = [
+		'twisterInUp',
+		'swap',
+		'openDownLeftRetourn',
+		'openDownRightRetourn',
+		'openUpLeftRetourn',
+		'openUpRightRetourn',
+		'perspectiveDownRetourn',
+		'perspectiveUpRetourn',
+		'perspectiveLeftRetourn',
+		'perspectiveRightRetourn',
+		'slideDownRetourn',
+		'slideUpRetourn',
+		'slideLeftRetourn',
+		'slideRightRetourn',
+		'swashIn',
+		'foolishIn',
+		'tinDownIn',
+		'boingInUp',
+		'spaceInUp',
+		'spaceInRight',
+		'spaceInDown',
+		'spaceInLeft',
+	];
+	var colors = [
+		'#533089',
+		'#66C2A5',
+		'#519DC1',
+		'#E85935',
+		'#601848',
+		'#1693A5',
+		'#FF0066',
+		'#556270',
+		'#FF0000',
+		'#FF9900',
+		'#D31996',
+	];
+	var textIndex = 0;
+	var next = function() {
+		var text = texts[textIndex];
+		textIndex = (textIndex + 1) % texts.length;
+		var oldOnce = document.getElementById('once');
+		var once = oldOnce.cloneNode(true);
+		oldOnce.parentNode.replaceChild(once, oldOnce);
+		once.style.color = pick(colors);
+		once.innerHTML = text;
+		twemoji.parse(document.body, {folder: 'svg', 'ext': '.svg'});
+		once.className = 'magictime ' + pick(effects);
+		once.addEventListener("webkitAnimationEnd", function() { setTimeout(next, 2000); });
+		once.addEventListener("animationend", function() { setTimeout(next, 2000); });
+	}
+	var inBlackout = false;
+	var blackout = function() {
+		var cover = document.getElementById('cover');
+		cover.style.display = 'flex';
+		inBlackout = true;
+		changeCoverBackground();
+		setTimeout(function() {
+			inBlackout = false;
+			cover.style.display = 'none';
+			setTimeout(blackout, 20000);
+		}, 800);
+	}
+	var changeCoverBackground = function changeCoverBackground() {
+		var cover = document.getElementById('cover');
+		if (!cover) {
+			return;
+		}
+		cover.style.backgroundColor = pick(colors);
+		if (inBlackout) {
+			setTimeout(changeCoverBackground, 100);
+		}
+	}
+	twemoji.parse(document.body, {folder: 'svg', 'ext': '.svg'});
+	setTimeout(next, 2000);
+	setTimeout(blackout, 20000);
+  </script>
+</body>
+</html>
+
